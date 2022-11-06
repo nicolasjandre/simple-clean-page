@@ -3,6 +3,7 @@
 
 
 <p align="center">Uma página simples para treinar conceitos de box model, display flex, position e responsividade.</p>
+<p align="center">Não foi adicionados links por ser apenas uma página teste.</p>
 
 
 
