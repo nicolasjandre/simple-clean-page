@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    margin: 0 123px;
+}
+
+header h1 {
+    color: #89C5CC;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 48px;
+
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1F1534;
+}
+
+header nav ul li:hover {
+    transform: scale(1.03);
+}
+
+/* opacity in menu */
+.opacity {
+    opacity: 0.5;
+}
+
+nav ul li a span {
+    color: #1F1534;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 58px 123px 0;
+}
+
+
+.textbox {
+    max-width: 489px;
+}
+
+.textbox h2 {
+    font-size: 49px;
+    font-weight: 400;
+    margin-bottom: 44px;
+}
+
+.textbox h2 span {
+    font-weight: 700;
+    color: #89C5CC;
+}
+
+.textbox p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #7D7987;
+}
+
+button {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F9F9F9;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background: #69B99D;
+    border-radius: 4px;
+    border-style: solid;
+    border-left: 32px;
+    border-right: 32px;
+    border-bottom: 15px;
+    border-top: 15px;
+    width: 179px;
+    height: 56px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.007);
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 82px;
+    margin-bottom: 30px;
+}
+
+footer img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 905px) {
+    main img{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 795px) {
+    main {
+        justify-content: center;
+        margin: 58px auto 0;
+    }
+    
+    main img{
+        display: none;
+    }
+    .textbox {
+        max-width: 795px;
+        text-align: center;
+    }
+    
+    button {
+        justify-content: center;
+        margin: 40px auto 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 30px;
+    }
+}
